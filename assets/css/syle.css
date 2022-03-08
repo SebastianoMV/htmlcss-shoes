@@ -4,15 +4,62 @@
   box-sizing: border-box;
 }
 
-body{
+body {
+  scroll-behavior: smooth;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.box{
+
+
+
+/* HEADER */
+nav{
+  position: fixed;
+  z-index: 999;
+  right: 0;
+}
+
+nav ul li{
+  margin-top: 10px;
+  list-style: none;
+  display: inline-block;
+  margin: 15px;
   position: relative;
-  width: 100%);
+}
+
+nav ul li a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 2px 2px 1px black;
+  font-weight: 700;
+  color: black;
+}
+
+a:hover{
+  box-shadow: 5px 5px 5px black;
+  
+}
+
+a:active{
+ background-color: gray;
+}
+
+
+/* MAIN */
+
+.box {
+  position: relative;
+  width: 100%;
   height: 100vh;
 }
-.shoes{
+
+.shoes {
   width: 60%;
   display: inline-block;
   position: absolute;
@@ -37,32 +84,6 @@ img{
 
 .green-text{
   color: green;
-}
-
-
-
-.overlay{
-  position: relative;
-  background-color: rgba(0, 0, 0, .4);
-  height: 100%;
-}
-
-.box:hover .overlay{
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.box:hover h3{
-  text-shadow: none;
-}
-.overlay h3{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-transform: uppercase;
-  font-size: 100px;
-  text-shadow: 5px     5px   5px   black;
 }
 
 #red{
